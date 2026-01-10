@@ -4,7 +4,6 @@ function Home(){
     return (
         <div>
             <SecaoVideo></SecaoVideo>
-            <SecaoVideo></SecaoVideo>
         </div>
     )
 }export default Home;
