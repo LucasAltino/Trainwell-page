@@ -1,6 +1,10 @@
+import SecaoVideo from "../sections/SecaoVideo";
 
 function Home(){
     return (
-        <div></div>
+        <div>
+            <SecaoVideo></SecaoVideo>
+            <SecaoVideo></SecaoVideo>
+        </div>
     )
 }export default Home;
