@@ -1,0 +1,57 @@
+.SecaoCard {
+    display: flex;
+    flex-wrap: wrap;         /* Permite que os cards pulem para a próxima linha */
+    justify-content: center; /* Centraliza o bloco todo na página */
+    margin-top: -4vh;
+    gap: 3vw 10vw;               /* O espaço que faltava para completar os 80vw */
+    width: 100%;             /* Garante que o flex ocupe a largura total */
+    padding: 60px 0;         /* Espaçamento vertical entre as seções */
+    box-sizing: border-box;
+}
+
+.LogoImg {
+    height: 50%;             /* Ajuste o tamanho do ícone */
+    object-fit: contain;
+}
+
+.LogoArea {
+    width: 35vw;             /* Mesma largura do seu CardMed */
+    height: 20vw;            /* Mesma altura do seu CardMed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.LogoArea:hover{
+    border-radius: 20px;
+    background-color: #56b408;
+}
+
+.LogoTexto {
+    font-family: "League Spartan", sans-serif;
+    font-size: 3vw;          /* Fonte proporcional ao tamanho do card */
+    color: #214635;
+    font-weight: bold;
+}
+
+/* ... seu código anterior ... */
+
+@media (max-width: 768px) {
+    .SecaoCard {
+        flex-direction: column; /* Muda a direção para COLUNA (um embaixo do outro) */
+        align-items: center;    /* Centraliza os cards na tela */
+        gap: 20px;              /* Espaço vertical simples entre eles */
+        padding: 40px 0;
+    }
+
+    /* Ajuste também a área do Logo para acompanhar o tamanho dos cards */
+    .LogoArea {
+        width: 85vw;
+        height: 100px;
+    }
+
+    .LogoTexto {
+        font-size: 32px; /* Tamanho fixo legível para o celular */
+    }
+}
